@@ -17,35 +17,35 @@
   <meta name="keywords" content="admin panel template, admin dashboard template, admin panel, bootstrap admin template, dashboard, laravel, bootstrap dashboard, admin dashboard, admin panel laravel template, laravel framework, admin laravel, laravel admin panel.">
 
   <!-- TITLE -->
-  <title><?php echo $title;?></title>
+  <title><?php echo $title ?></title>
 
   <!-- Favicon -->
-  <link rel="icon" href="<?= base_url()?>build/assets/images/brand/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="<?= base_url() ?>build/assets/images/brand/favicon.ico" type="image/x-icon">
 
   <!-- ICONS CSS -->
-  <link href="<?= base_url()?>build/assets/iconfonts/icons.css" rel="stylesheet">
+  <link href="<?= base_url() ?>build/assets/iconfonts/icons.css" rel="stylesheet">
 
   <!-- Main Theme Js -->
-  <script src="<?= base_url()?>build/assets/main.js"></script>
+  <script src="<?= base_url() ?>build/assets/main.js"></script>
 
   <!-- BOOTSTRAP CSS -->
-  <link id="style" href="<?= base_url()?>build/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link id="style" href="<?= base_url() ?>build/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Choices JS -->
-  <script src="<?= base_url()?>build/assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="<?= base_url() ?>build/assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
 
   <!-- Simplebar Css -->
-  <link href="<?= base_url()?>build/assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
+  <link href="<?= base_url() ?>build/assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
 
   <!-- Color Picker Css -->
-  <link rel="stylesheet" href="<?= base_url()?>build/assets/libs/flatpickr/flatpickr.min.css">
-  <link rel="stylesheet" href="<?= base_url()?>build/assets/libs/%40simonwep/pickr/themes/nano.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>build/assets/libs/flatpickr/flatpickr.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>build/assets/libs/%40simonwep/pickr/themes/nano.min.css">
 
   <!-- Choices Css -->
-  <link rel="stylesheet" href="<?= base_url()?>build/assets/libs/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>build/assets/libs/choices.js/public/assets/styles/choices.min.css">
   <!-- APP CSS & APP SCSS -->
-  <link rel="preload" as="style" href="<?= base_url()?>build/assets/app-e29e56ca.css" />
-  <link rel="stylesheet" href="<?= base_url()?>build/assets/app-e29e56ca.css" />
+  <link rel="preload" as="style" href="<?= base_url() ?>build/assets/app-e29e56ca.css" />
+  <link rel="stylesheet" href="<?= base_url() ?>build/assets/app-e29e56ca.css" />
 
 
 
@@ -454,7 +454,7 @@
 
   <!-- GLOBAL-LOADER -->
   <div id="loader">
-    <img src="<?= base_url()?>build/assets/images/loader.svg" class="loader-img" alt="Loader">
+    <img src="<?= base_url() ?>build/assets/images/loader.svg" class="loader-img" alt="Loader">
   </div>
   <!-- /GLOBAL-LOADER -->
 
@@ -474,10 +474,10 @@
             <div class="header-element">
               <div class="horizontal-logo">
                 <a href="index.html" class="header-logo">
-                  <img src="<?= base_url()?>build/assets/images/brand/desktop-logo.png" alt="logo" class="desktop-logo">
-                  <img src="<?= base_url()?>build/assets/images/brand/toggle-logo.png" alt="logo" class="toggle-logo">
-                  <img src="<?= base_url()?>build/assets/images/brand/desktop-dark.png" alt="logo" class="desktop-dark">
-                  <img src="<?= base_url()?>build/assets/images/brand/toggle-dark.png" alt="logo" class="toggle-dark">
+                  <img src="<?= base_url() ?>build/assets/images/brand/desktop-logo.png" alt="logo" class="desktop-logo">
+                  <img src="<?= base_url() ?>build/assets/images/brand/toggle-logo.png" alt="logo" class="toggle-logo">
+                  <img src="<?= base_url() ?>build/assets/images/brand/desktop-dark.png" alt="logo" class="desktop-dark">
+                  <img src="<?= base_url() ?>build/assets/images/brand/toggle-dark.png" alt="logo" class="toggle-dark">
                 </a>
               </div>
             </div>
@@ -569,7 +569,7 @@
                   <div class="header-element country-dropdown dropdown-center">
                     <!-- Start::header-link|dropdown-toggle -->
                     <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="<?= base_url()?>build/assets/images/flags-img/us_flag.jpg" class="rounded-circle header-link-icon" alt="img">
+                      <img src="<?= base_url() ?>build/assets/images/flags-img/us_flag.jpg" class="rounded-circle header-link-icon" alt="img">
                     </a>
                     <!-- End::header-link|dropdown-toggle -->
                     <!-- Start::main-header-dropdown -->
@@ -578,7 +578,7 @@
                         <li class="dropdown-item mb-1">
                           <div class="d-flex align-items-center">
                             <div class="pe-2">
-                              <img src="<?= base_url()?>build/assets/images/flags-img/india_flag.jpg" class="rounded-circle country-img" alt="img">
+                              <img src="<?= base_url() ?>build/assets/images/flags-img/india_flag.jpg" class="rounded-circle country-img" alt="img">
                             </div>
                             <div class="flex-grow-1">
                               <p class="mb-0 fs-15">India</p>
@@ -588,7 +588,7 @@
                         <li class="dropdown-item mb-1">
                           <div class="d-flex align-items-center">
                             <div class="pe-2">
-                              <img src="<?= base_url()?>build/assets/images/flags-img/malaysia.jpg" class="rounded-circle country-img" alt="img">
+                              <img src="<?= base_url() ?>build/assets/images/flags-img/malaysia.jpg" class="rounded-circle country-img" alt="img">
                             </div>
                             <div class="flex-grow-1">
                               <p class="mb-0 fs-15">Malaysia</p>
@@ -598,7 +598,7 @@
                         <li class="dropdown-item mb-1">
                           <div class="d-flex align-items-center">
                             <div class="pe-2">
-                              <img src="<?= base_url()?>build/assets/images/flags-img/italy_flag.jpg" class="rounded-circle country-img" alt="img">
+                              <img src="<?= base_url() ?>build/assets/images/flags-img/italy_flag.jpg" class="rounded-circle country-img" alt="img">
                             </div>
                             <div class="flex-grow-1">
                               <p class="mb-0 fs-15">Italy</p>
@@ -608,7 +608,7 @@
                         <li class="dropdown-item mb-1">
                           <div class="d-flex align-items-center">
                             <div class="pe-2">
-                              <img src="<?= base_url()?>build/assets/images/flags-img/argentina.jpg" class="rounded-circle country-img" alt="img">
+                              <img src="<?= base_url() ?>build/assets/images/flags-img/argentina.jpg" class="rounded-circle country-img" alt="img">
                             </div>
                             <div class="flex-grow-1">
                               <p class="mb-0 fs-15">Argentina</p>
@@ -618,7 +618,7 @@
                         <li class="dropdown-item active mb-1">
                           <div class="d-flex align-items-center">
                             <div class="pe-2">
-                              <img src="<?= base_url()?>build/assets/images/flags-img/us_flag.jpg" class="rounded-circle country-img" alt="img">
+                              <img src="<?= base_url() ?>build/assets/images/flags-img/us_flag.jpg" class="rounded-circle country-img" alt="img">
                             </div>
                             <div class="flex-grow-1">
                               <p class="mb-0 fs-15">USA</p>
@@ -628,7 +628,7 @@
                         <li class="dropdown-item mb-1">
                           <div class="d-flex align-items-center">
                             <div class="pe-2">
-                              <img src="<?= base_url()?>build/assets/images/flags-img/turkey.jpg" class="rounded-circle country-img" alt="img">
+                              <img src="<?= base_url() ?>build/assets/images/flags-img/turkey.jpg" class="rounded-circle country-img" alt="img">
                             </div>
                             <div class="flex-grow-1">
                               <p class="mb-0 fs-15">Turkey</p>
@@ -710,7 +710,7 @@
                       <ul class="mb-0 overflow-auto" id="header-cart-items-scroll">
                         <li class="dropdown-item">
                           <div class="d-flex align-items-start cart-dropdown-item">
-                            <img src="<?= base_url()?>build/assets/images/products/8.jpg" alt="img" class="avatar avatar-md br-5 me-3">
+                            <img src="<?= base_url() ?>build/assets/images/products/8.jpg" alt="img" class="avatar avatar-md br-5 me-3">
                             <div class="flex-grow-1">
                               <div class="d-flex align-items-start justify-content-between mb-0">
                                 <div class="mb-0 fs-14 fw-semibold">
@@ -732,7 +732,7 @@
                         </li>
                         <li class="dropdown-item">
                           <div class="d-flex align-items-start cart-dropdown-item">
-                            <img src="<?= base_url()?>build/assets/images/products/2.jpg" alt="img" class="avatar avatar-md br-5 me-3">
+                            <img src="<?= base_url() ?>build/assets/images/products/2.jpg" alt="img" class="avatar avatar-md br-5 me-3">
                             <div class="flex-grow-1">
                               <div class="d-flex align-items-start justify-content-between mb-0">
                                 <div class="mb-0 fs-14 text-dark fw-semibold">
@@ -754,7 +754,7 @@
                         </li>
                         <li class="dropdown-item">
                           <div class="d-flex align-items-start cart-dropdown-item">
-                            <img src="<?= base_url()?>build/assets/images/products/1.jpg" alt="img" class="avatar avatar-md br-5 me-3">
+                            <img src="<?= base_url() ?>build/assets/images/products/1.jpg" alt="img" class="avatar avatar-md br-5 me-3">
                             <div class="flex-grow-1">
                               <div class="d-flex align-items-start justify-content-between mb-0">
                                 <div class="mb-0 fs-14 text-dark fw-semibold">
@@ -777,7 +777,7 @@
                         </li>
                         <li class="dropdown-item">
                           <div class="d-flex align-items-start cart-dropdown-item">
-                            <img src="<?= base_url()?>build/assets/images/products/3.jpg" alt="img" class="avatar avatar-md br-5 me-3">
+                            <img src="<?= base_url() ?>build/assets/images/products/3.jpg" alt="img" class="avatar avatar-md br-5 me-3">
                             <div class="flex-grow-1">
                               <div class="d-flex align-items-start justify-content-between mb-0">
                                 <div class="mb-0 fs-14 text-dark fw-semibold">
@@ -799,7 +799,7 @@
                         </li>
                         <li class="dropdown-item">
                           <div class="d-flex align-items-start cart-dropdown-item">
-                            <img src="<?= base_url()?>build/assets/images/products/5.jpg" alt="img" class="avatar avatar-md br-5 me-3">
+                            <img src="<?= base_url() ?>build/assets/images/products/5.jpg" alt="img" class="avatar avatar-md br-5 me-3">
                             <div class="flex-grow-1">
                               <div class="d-flex align-items-start justify-content-between mb-0">
                                 <div class="mb-0 fs-14 text-dark fw-semibold">
@@ -898,7 +898,7 @@
                                   </div>
                                   <a href="profile.html" class="d-flex align-items-center mt-1">
                                     <span class="avatar avatar-sm brround">
-                                      <img src="<?= base_url()?>build/assets/images/users/1.jpg" class="brround" alt="img">
+                                      <img src="<?= base_url() ?>build/assets/images/users/1.jpg" class="brround" alt="img">
                                     </span>
                                     <span class="ms-2 fs-13 text-gray-600">Nile
                                       Rebort</span>
@@ -1115,10 +1115,10 @@
                     <!-- Start::header-link|dropdown-toggle -->
                     <a href="javascript:void(0);" class="header-link dropdown-toggle d-flex align-items-center" id="mainHeaderProfile" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="me-2">
-                        <img src="<?= base_url()?>build/assets/images/users/21.jpg" alt="img" width="30" height="30" class="rounded-circle">
+                        <img src="<?= base_url() ?>build/assets/images/users/21.jpg" alt="img" width="30" height="30" class="rounded-circle">
                       </span>
                       <div class="d-xl-block d-none lh-1">
-                        <h6 class="fs-13 font-weight-semibold mb-0">Ad</h6>
+                        <h6 class="fs-13 font-weight-semibold mb-0">Json Taylor</h6>
                         <span class="op-8 fs-10">Web Designer</span>
                       </div>
                     </a>
@@ -1126,12 +1126,25 @@
                     <ul class="dropdown-menu pt-0 overflow-hidden dropdown-menu-end mt-1" aria-labelledby="mainHeaderProfile">
                       <li><a class="dropdown-item" href="profile.html"><i class="ti ti-user-circle fs-18 me-2 op-7"></i>Profile</a></li>
                       <li><a class="dropdown-item" href="index.html"><i class="ti ti-inbox fs-18 me-2 op-7"></i>Dashboard</a></li>
-                      
-                      <li><a class="dropdown-item" href="<?= base_url()?>Login/logout"><i class="ti ti-power fs-18 me-2 op-7"></i>Sign Out</a></li>
+                      <li><a class="dropdown-item border-block-end" href="blog.html"><i class="ti ti-clipboard-check fs-18 me-2 op-7"></i>Posts &
+                          Activities</a></li>
+                      <li><a class="dropdown-item" href="settings.html"><i class="ti ti-adjustments-horizontal fs-18 me-2 op-7"></i>Settings
+                          & Privacy</a></li>
+                      <li><a class="dropdown-item border-block-end" href="faq.html"><i class="ti ti-help fs-18 me-2 op-7"></i>Help Center</a></li>
                       <li>
                         <hr class="dropdown-divider my-0">
                       </li>
-                      
+                      <li><a class="dropdown-item" href="register.html"><i class="ti ti-user-plus fs-18 me-2 op-7"></i>Add Another
+                          Account</a></li>
+                      <li><a class="dropdown-item" href="login.html"><i class="ti ti-power fs-18 me-2 op-7"></i>Sign Out</a></li>
+                      <li>
+                        <hr class="dropdown-divider my-0">
+                      </li>
+                      <li class="d-flex justify-content-center p-2">
+                        <span><a class="fs-12 px-2 border-end" href="javascript:void(0);">Privacy Policy</a></span>
+                        <span><a class="fs-12 px-2 border-end" href="javascript:void(0);">Terms</a></span>
+                        <span><a class="fs-12 px-2" href="javascript:void(0);">Cookies</a></span>
+                      </li>
                     </ul>
                   </div>
                   <!-- End::header-element|main-profile-user -->
@@ -1167,10 +1180,10 @@
         <!-- Start::main-sidebar-header -->
         <div class="main-sidebar-header">
           <a href="index.html" class="header-logo">
-            <img src="<?= base_url()?>build/assets/images/brand/desktop-logo.png" alt="logo" class="desktop-logo">
-            <img src="<?= base_url()?>build/assets/images/brand/toggle-logo.png" alt="logo" class="toggle-logo">
-            <img src="<?= base_url()?>build/assets/images/brand/desktop-dark.png" alt="logo" class="desktop-dark">
-            <img src="<?= base_url()?>build/assets/images/brand/toggle-dark.png" alt="logo" class="toggle-dark">
+            <img src="<?= base_url() ?>build/assets/images/brand/desktop-logo.png" alt="logo" class="desktop-logo">
+            <img src="<?= base_url() ?>build/assets/images/brand/toggle-logo.png" alt="logo" class="toggle-logo">
+            <img src="<?= base_url() ?>build/assets/images/brand/desktop-dark.png" alt="logo" class="desktop-dark">
+            <img src="<?= base_url() ?>build/assets/images/brand/toggle-dark.png" alt="logo" class="toggle-dark">
           </a>
         </div>
         <!-- End::main-sidebar-header -->
@@ -1202,28 +1215,30 @@
               </li>
               <!-- End::slide -->
 
-              <!-- Start::slide -->
-              <li class="slide has-sub">
-                <a href="javascript:void(0);" class="side-menu__item">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" class="side-menu__icon" fill="#000000">
-                    <path d="M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
-                    </path>
-                  </svg>
-                  <span class="side-menu__label">Authentication</span>
-                  <i class="fe fe-chevron-right side-menu__angle"></i>
-                </a>
-                <ul class="slide-menu child1">
-                  <li class="slide side-menu__label1">
-                    <a href="javascript:void(0);">Authentication</a>
-                  </li>
-                  <li class="slide">
-                    <a href="login.html" class="side-menu__item">LogIn</a>
-                  </li>
-                </ul>
-              </li>
-              <!-- End::slide -->
-            </ul>
+             
+
+             
+
+             
+
+              
+           
+
+              
+
+           
+
+             
+
+             
+
             
+
+              
+
+             
+
+            </ul>
             <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z">
                 </path>
@@ -1254,7 +1269,114 @@
         <!-- PAGE-HEADER END -->
 
         <!-- CONTAINER -->
-      <!-- view in home page -->
+        <div class="main-container container-fluid">
+
+          <!-- Start::Row-1 -->
+          <div class="row">
+            <div class="col-xxl-9">
+              <div class="row">
+                <div class="col-xxl-5 col-xl-12">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xxl-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex align-items-start">
+                            <div class="flex-grow-1">
+                              <p class="mb-0">Total Orders</p>
+                              <span class="fs-5">45</span>
+                              <span class="fs-12 text-success ms-1"><i class="ti ti-trending-up mx-1"></i>0.5%</span>
+                            </div>
+                            <div class="min-w-fit-content ms-3">
+                              <span class="avatar avatar-md br-5 bg-primary-transparent text-primary">
+                                <i class="fe fe-user fs-18"></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xxl-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex align-items-start">
+                            <div class="flex-grow-1">
+                              <p class="mb-0">Total Package</p>
+                              <span class="fs-5">10</span>
+                              <span class="fs-12 text-secondary ms-1"><i class="ti ti-trending-down mx-1"></i>8.0%</span>
+                            </div>
+                            <div class="min-w-fit-content ms-3">
+                              <span class="avatar avatar-md br-5 bg-secondary-transparent text-secondary">
+                                <i class="fe fe-package fs-18"></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xxl-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex align-items-start">
+                            <div class="flex-grow-1">
+                              <p class="mb-0">Total Payments</p>
+                              <span class="fs-5">60</span>
+                              <span class="fs-12 text-success ms-1"><i class="ti ti-trending-up mx-1"></i>3.5%</span>
+                            </div>
+                            <div class="min-w-fit-content ms-3">
+                              <span class="avatar avatar-md br-5 bg-warning-transparent text-warning">
+                                <i class="fe fe-credit-card fs-18"></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xxl-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex align-items-start flex-wrap gap-1">
+                            <div class="flex-grow-1">
+                              <p class="mb-0">Subscriptions </p>
+                              <span class="fs-5">10</span>
+                              <span class="fs-12 text-success ms-1"><i class="ti ti-trending-up mx-1"></i>0.5%</span>
+                            </div>
+                            <div class="min-w-fit-content">
+                              <span class="avatar avatar-md br-5 bg-info-transparent">
+                                <i class="fe fe-user-plus fs-18"></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                      <div class="card">
+
+
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                      <div class="card overflow-hidden">
+
+                      </div>
+                    </div>
+                    <div class="col-xl-12">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-7 col-xl-12">
+
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- End::Row-1 -->
+
+        </div>
         <!-- CONTAINER END -->
 
 
@@ -1320,6 +1442,17 @@
     </div>
     <!-- End Country-selector modal -->
 
+    <!-- Footer opened -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-md-12 col-sm-12 text-center">
+            Copyright © <span id="year"></span> <a href="javascript:void(0);">Vexel</a>. Designed with <span class="fa fa-heart text-danger"></span> by <a href="javascript:void(0);"> Spruko </a> All
+            rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer> <!-- End Footer -->
 
 
 
@@ -1336,42 +1469,42 @@
   <div id="responsive-overlay"></div>
 
   <!-- Popper JS -->
-  <script src="<?= base_url()?>build/assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+  <script src="<?= base_url() ?>build/assets/libs/%40popperjs/core/umd/popper.min.js"></script>
 
   <!-- Bootstrap JS -->
-  <script src="<?= base_url()?>build/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url() ?>build/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Node Waves JS-->
-  <script src="<?= base_url()?>build/assets/libs/node-waves/waves.min.js"></script>
+  <script src="<?= base_url() ?>build/assets/libs/node-waves/waves.min.js"></script>
 
   <!-- Simplebar JS -->
-  <script src="<?= base_url()?>build/assets/libs/simplebar/simplebar.min.js"></script>
-  <link rel="modulepreload" href="<?= base_url()?>build/assets/simplebar-635bad04.js" />
-  <script type="module" src="<?= base_url()?>build/assets/simplebar-635bad04.js"></script>
+  <script src="<?= base_url() ?>build/assets/libs/simplebar/simplebar.min.js"></script>
+  <link rel="modulepreload" href="<?= base_url() ?>build/assets/simplebar-635bad04.js" />
+  <script type="module" src="<?= base_url() ?>build/assets/simplebar-635bad04.js"></script>
   <!-- Color Picker JS -->
-  <script src="<?= base_url()?>build/assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+  <script src="<?= base_url() ?>build/assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
 
 
   <!-- INTERNAL APEXCHART JS -->
-  <script src="<?= base_url()?>build/assets/libs/apexcharts/apexcharts.min.js"></script>
+  <script src="<?= base_url() ?>build/assets/libs/apexcharts/apexcharts.min.js"></script>
 
   <!-- Color Picker JS -->
-  <script src="<?= base_url()?>build/assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+  <script src="<?= base_url() ?>build/assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
 
   <!-- Checkbox selectall JS -->
-  <link rel="modulepreload" href="<?= base_url()?>build/assets/checkbox-selectall-e4a9d358.js" />
-  <script type="module" src="<?= base_url()?>build/assets/checkbox-selectall-e4a9d358.js"></script>
+  <link rel="modulepreload" href="<?= base_url() ?>build/assets/checkbox-selectall-e4a9d358.js" />
+  <script type="module" src="<?= base_url() ?>build/assets/checkbox-selectall-e4a9d358.js"></script>
   <!-- INTERNAL INDEX JS -->
-  <link rel="modulepreload" href="<?= base_url()?>build/assets/index1-ad56c451.js" />
-  <script type="module" src="<?= base_url()?>build/assets/index1-ad56c451.js"></script>
+  <link rel="modulepreload" href="<?= base_url() ?>build/assets/index1-ad56c451.js" />
+  <script type="module" src="<?= base_url() ?>build/assets/index1-ad56c451.js"></script>
 
   <!-- Sticky JS -->
-  <script src="<?= base_url()?>build/assets/sticky.js"></script>
+  <script src="<?= base_url() ?>build/assets/sticky.js"></script>
 
   <!-- APP JS-->
-  <link rel="modulepreload" href="<?= base_url()?>build/assets/app-6df099bd.js" />
-  <link rel="modulepreload" href="<?= base_url()?>build/assets/defaultmenu-7feba3a7.js" />
-  <script type="module" src="<?= base_url()?>build/assets/app-6df099bd.js"></script>
+  <link rel="modulepreload" href="<?= base_url() ?>build/assets/app-6df099bd.js" />
+  <link rel="modulepreload" href="<?= base_url() ?>build/assets/defaultmenu-7feba3a7.js" />
+  <script type="module" src="build/assets/app-6df099bd.js"></script>
   <!-- END SCRIPTS -->
 
 </body>

@@ -20,22 +20,22 @@
   <title>Admin </title>
 
   <!-- Authentication JS -->
-  <link rel="modulepreload" href="build/assets/authentication-main-d17b6bac.js" />
-  <script type="module" src="build/assets/authentication-main-d17b6bac.js"></script>
+  <link rel="modulepreload" href="<?= base_url()?>build/assets/authentication-main-d17b6bac.js" />
+  <script type="module" src="<?= base_url()?>build/assets/authentication-main-d17b6bac.js"></script>
   <!-- Favicon -->
-  <link rel="icon" href="build/assets/images/brand/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="<?= base_url()?>build/assets/images/brand/favicon.ico" type="image/x-icon">
 
   <!-- ICONS CSS -->
-  <link href="build/assets/iconfonts/icons.css" rel="stylesheet">
+  <link href="<?= base_url()?>build/assets/iconfonts/icons.css" rel="stylesheet">
 
   <!-- BOOTSTRAP CSS -->
-  <link id="style" href="build/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link id="style" href="<?= base_url()?>build/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- APP CSS & APP SCSS -->
-  <link rel="preload" as="style" href="build/assets/app-e29e56ca.css" />
-  <link rel="modulepreload" href="build/assets/app-4ed993c7.js" />
-  <link rel="stylesheet" href="build/assets/app-e29e56ca.css" />
-  <script type="module" src="build/assets/app-4ed993c7.js"></script>
+  <link rel="preload" as="style" href="<?= base_url()?>build/assets/app-e29e56ca.css" />
+  <link rel="modulepreload" href="<?= base_url()?>build/assets/app-4ed993c7.js" />
+  <link rel="stylesheet" href="<?= base_url()?>build/assets/app-e29e56ca.css" />
+  <script type="module" src="<?= base_url()?>build/assets/app-4ed993c7.js"></script>
 
 
 
@@ -457,7 +457,7 @@
       <!-- CONTAINER OPEN -->
       <div class="">
         <div class="text-center">
-          <a href="index.html"><img src="build/assets/images/brand/desktop-dark.png" class="header-brand-img" alt=""></a>
+          <a href="index.html"><img src="<?= base_url()?>build/assets/images/brand/desktop-dark.png" class="header-brand-img" alt=""></a>
         </div>
       </div>
       <div class="container-lg">
@@ -522,7 +522,7 @@
   </div>
 
   <!-- Bootstrap JS -->
-  <script src="build/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url()?>build/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
@@ -531,9 +531,9 @@
 
 
   <!-- Custom-Switcher JS -->
-  <link rel="modulepreload" href="build/assets/custom-switcher-aff38aa1.js" />
-  <link rel="modulepreload" href="build/assets/defaultmenu-7feba3a7.js" />
-  <script type="module" src="build/assets/custom-switcher-aff38aa1.js"></script>
+  <link rel="modulepreload" href="<?= base_url()?>build/assets/custom-switcher-aff38aa1.js" />
+  <link rel="modulepreload" href="<?= base_url()?>build/assets/defaultmenu-7feba3a7.js" />
+  <script type="module" src="<?= base_url()?>build/assets/custom-switcher-aff38aa1.js"></script>
 </body>
 
 
@@ -559,7 +559,7 @@
       errorPlacement: function(error, element) {
         if (element.is(":radio")) {
           error.appendTo(element.parents('.form-group'));
-        } else { // This is the default behavior 
+        } else {
           error.insertAfter(element);
         }
       },
@@ -573,4 +573,44 @@
   $('input').keypress(function(e) {
     if (this.value.length === 0 && e.which === 32) e.preventDefault();
   });
+
+
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+<?php if ($this->session->flashdata('success')): ?>
+    <script>
+        toastr.success('<?php echo $this->session->flashdata("success"); ?>', '', <?php echo json_encode([
+    "closeButton" => true,
+    "progressBar" => true,
+    "timeOut" => "2000",
+]); ?>);
+    </script>
+<?php endif;?>
+ <?php if ($this->session->flashdata('error')): ?>
+    <script>
+        toastr.error('<?php echo $this->session->flashdata("error"); ?>', '', <?php echo json_encode([
+    "closeButton" => true,
+    "progressBar" => true,
+    "timeOut" => "2000",
+]); ?>);
+    </script>
+<?php endif;?>
+ <?php if ($this->session->flashdata('warning')): ?>
+    <script>
+        toastr.warning('<?php echo $this->session->flashdata("warning"); ?>', '', <?php echo json_encode([
+    "closeButton" => true,
+    "progressBar" => true,
+    "timeOut" => "2000",
+]); ?>);
+    </script>
+<?php endif;?>
+ <?php if ($this->session->flashdata('info')): ?>
+    <script>
+        toastr.info('<?php echo $this->session->flashdata("info"); ?>', '', <?php echo json_encode([
+    "closeButton" => true,
+    "progressBar" => true,
+    "timeOut" => "2000",
+]); ?>);
+    </script>
+<?php endif;?>

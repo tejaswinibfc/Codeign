@@ -4,61 +4,69 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Login extends CI_Controller
 {
 
-  public  function __construct()
-  {
-    parent::__construct();
+    public function __construct()
+    {
+        parent::__construct();
 
-    $this->load->helper('url');
-    $this->load->model('Users_model');
-    $this->load->library('session');
-    $this->load->library('form_validation');
-    
-  }
+        $this->load->helper(array('url', 'form'));
+        $this->load->model('Users_model');
+        $this->load->library('session');
+        $this->load->library('form_validation');
 
-  public function index()
-  {
-
-    $this->load->view('login');
-  }
-
-  // public function demo(){
-  //   echo "hello";
-  // }
-
-  public function user_login()
-  {
-   
-   $this->load->library('session');
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $data = $this->Users_model->login($email, $password);
-
-    if ($data) {
-      $this->session->set_userdata('user', $data);
-      redirect('Login/home');
-    } else {
-       redirect('Login');
-     
     }
-  }
 
-  public function home()
-  {
-    if($this->session->userdata('user')){
-			$data['title'] = "Home";
+    // view login
+    public function index()
+    {
+        $this->load->view('login');
+    } //end  view login
 
-    $this->load->view('home',$data);
-		}
-		else{
-			redirect('Login');
-		}
-    
-  }
+    // add user login
+    public function user_login()
+    {
+            $this->form_validation->set_rules('email', 'Email', 'trim|required');
+            $this->form_validation->set_rules('password', 'Password', 'trim|required');
+            if ($this->form_validation->run() == false) {
+                $this->load->view('login');
+            } else {
+                $email = $this->input->post('email');
+                $password = $this->input->post('password');
+                $login = $this->Users_model->login($email, $password);
+                if ($login) {
+                    $data = array(
+                        'userName' => $login->name,
+                        'userId' => $login->id,
+                        'email' => $login->email,
+                    );
+                    $this->session->set_userdata('User', $data);
+                    redirect('Login/dashboard');
+                } else {
+                    $this->session->set_flashdata('error', 'Invalid credentials');
+                    redirect('Login');
+                }
+            }
+}
+    // end user login
 
-  public function logout(){
-		$this->session->unset_userdata('user');
-		redirect('Login');
-	}
+    // view home page
+    public function dashboard()
+    {
 
- 
+        if ($this->session->userdata('User')) {
+            $data['title'] = "dashboard";
+            $this->load->view('dashboard', $data);
+        } else {
+            redirect('Login');
+        }
+
+    }
+    // end view home page
+
+    // user logout
+    public function logout()
+    {
+     $this->session->unset_userdata('User');
+        redirect('Login');
+    } // end user logout
+
 }
