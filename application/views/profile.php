@@ -35,7 +35,7 @@
 											<img src="<?= base_url() ?>assets/images/faces/6.jpg" alt="img" class="m-0 p-1 rounded hrem-6">
 										</div>
 										<div class="ms-4">
-											<h4>Elena Gilbert</h4>
+											<h4><?= $user_login['name']?></h4>
 											<!-- <p class="text-muted mb-2">Member Since: November 2020</p> -->
 
 										</div>
@@ -68,30 +68,34 @@
 								
 										<div class="row mb-4">
 											<p class="mb-4 text-17">Personal Information</p>
-											<input type="hidden" class="form-control" id="id"  name ="id" value="<?= $user_login ['userId']?> ">
+											<!-- <input type="hidden" class="form-control" id="id"  name ="id" value="<?= $user_login['name']?> "> -->
 											<div class="col-md-12 col-lg-12 col-xl-6">
 											<div class="form-group">
 													<label for="username" class="form-label">User Name</label>
-													<input type="text" class="form-control" id="username"  name ="name" value="<?= $user_login ['userName']?> ">
+													<input type="text" class="form-control" id="name"  name ="name" value="<?= $user_login['name']?> ">
 												</div>
+												<span style="color:red;"><?php echo form_error('name'); ?></span>
 											</div>
 											<div class="col-md-12 col-lg-12 col-xl-6">
 												<div class="form-group">
 													<label for="firstname" class="form-label">Email</label>
-													<input type="text" class="form-control" id="firstname" name="email" placeholder="First Name" value="<?= $user_login ['email']?>">
+													<input type="text" class="form-control" id="email" name="email" value="<?= $user_login ['email']?>">
 												</div>
+												<span style="color:red;"><?php echo form_error('email'); ?></span>
 											</div>
 											<div class="col-md-12 col-lg-12 col-xl-6">
 												<div class="form-group">
 													<label for="lastname" class="form-label">Address</label>
-													<input type="text" class="form-control" id="lastname" name="" placeholder="" value="">
+													<input type="text" class="form-control" id="address" name="address"  value="<?= $user_login ['address']?>">
 												</div>
+												<span style="color:red;"><?php echo form_error('address'); ?></span>
 											</div>
 											<div class="col-md-12 col-lg-12 col-xl-6">
 												<div class="form-group">
 													<label for="nickname" class="form-label">Phone</label>
-													<input type="text" class="form-control" id="nickname" name="" placeholder="" value="">
+													<input type="text" class="form-control" id="mobile" name="mobile"  value="<?= $user_login ['mobile']?>">
 												</div>
+												<span style="color:red;"><?php echo form_error('mobile'); ?></span>
 											</div>
 											<div class="form-group float-end">
 												<div class="row row-sm">
