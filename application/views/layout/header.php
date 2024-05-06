@@ -52,7 +52,7 @@
 <body class="app sidebar-mini">
 
   <!-- Switcher -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
+  <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header border-bottom">
       <h5 class="offcanvas-title" id="offcanvasRightLabel">Switcher</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fe fe-x fs-18"></i></button>
@@ -446,7 +446,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- End switcher -->
 
   <!-- GLOBAL-LOADER -->
@@ -594,9 +594,9 @@
                     </a>
                     <!-- End::header-link|dropdown-toggle -->
                     <ul class="dropdown-menu pt-0 overflow-hidden dropdown-menu-end mt-1" aria-labelledby="mainHeaderProfile">
-                      <li><a class="dropdown-item" href="<?=base_url()?>admin/Login/profile"><i class="ti ti-user-circle fs-18 me-2 op-7"></i>Profile</a></li>
-                      <li><a class="dropdown-item" href="<?=base_url()?>admin/Login/dashboard"><i class="ti ti-inbox fs-18 me-2 op-7"></i>Dashboard</a></li>
-                      <li><a class="dropdown-item" href="<?=base_url()?>admin/Login/index"><i class="ti ti-power fs-18 me-2 op-7"></i>Sign Out</a></li>
+                      <li><a class="dropdown-item" href="<?= base_url() ?>admin/ProfileController/index"><i class="ti ti-user-circle fs-18 me-2 op-7"></i>Profile</a></li>
+                      <li><a class="dropdown-item" href="<?= base_url() ?>admin/Login/dashboard"><i class="ti ti-inbox fs-18 me-2 op-7"></i>Dashboard</a></li>
+                      <li><a class="dropdown-item" href="<?= base_url() ?>admin/Login/logout"><i class="ti ti-power fs-18 me-2 op-7"></i>Sign Out</a></li>
                     </ul>
                   </div>
                   <!-- End::header-element|main-profile-user -->
@@ -657,7 +657,7 @@
 
               <!-- Start::slide -->
               <li class="slide">
-                <a href="index.html" class="side-menu__item">
+                <a href="<?= base_url()?>admin/Login/dashboard" class="side-menu__item">
                   <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
@@ -708,52 +708,18 @@
 
         <!-- PAGE-HEADER -->
         <div class="page-header d-flex align-items-center justify-content-between border-bottom mb-4">
-          <h1 class="page-title"><?= $title?></h1>
+          <h1 class="page-title"><?= $title ?></h1>
           <div>
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="javascript:void(0);"><?= $title?></a></li>
-              <li class="breadcrumb-item active" aria-current="page"><?= $title?></li>
+              <li class="breadcrumb-item"><a href="javascript:void(0);"><?= $title ?></a></li>
+              <li class="breadcrumb-item active" aria-current="page"><?= $title ?></li>
             </ol>
           </div>
         </div>
         <!-- PAGE-HEADER END -->
-        <?php if ($this->session->flashdata('error')) { ?>
-			  <div class="container-fluid">
-					<div class="row justify-content-end">
-						<div class="col-3">
-						<div class="toast align-items-center tx-fixed-white bg-secondary border-0 show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-					<div class="d-flex">
-						<div class="toast-body">
-							<?php echo $this->session->flashdata('error'); ?>
-						</div>
-						<button aria-label="Close" class="btn-close fs-20 ms-auto mt-2 pe-2 tx-fixed-white" data-bs-dismiss="toast"><span aria-hidden="true">×</span></button>
-					</div>
-			  	</div>
-						</div>
-					</div>
-					</div>
-				
-      <?php } ?>
-
-      <?php if ($this->session->flashdata('success')) { ?>
-			  <div class="container-fluid">
-					<div class="row justify-content-end">
-						<div class="col-3">
-						<div class="toast align-items-center tx-fixed-white bg-success border-0 show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-					<div class="d-flex">
-						<div class="toast-body">
-							<?php echo $this->session->flashdata('success'); ?>
-						</div>
-						<button aria-label="Close" class="btn-close fs-20 ms-auto mt-2 pe-2 tx-fixed-white" data-bs-dismiss="toast"><span aria-hidden="true">×</span></button>
-					</div>
-			  	</div>
-						</div>
-					</div>
-					</div>
-				
-      <?php } ?>
+       
+  
         <!-- CONTAINER -->
-
         <!-- main content start .....-->
 
         <!-- CONTAINER END -->
@@ -763,66 +729,64 @@
 
         <!-- Country-selector modal -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <span class="input-group">
-              <input type="search" class="form-control px-2 " placeholder="Search..." aria-label="Username">
-              <a href="javascript:void(0);" class="input-group-text bg-primary text-white" id="Search-Grid"><i class="fe fe-search header-link-icon tx-fixed-white fs-18"></i></a>
-            </span>
-            <div class="mt-3">
-              <div class="">
-                <p class="fw-semibold text-muted mb-2 fs-13">Recent Searches</p>
-                <div class="ps-2">
-                  <a href="javascript:void(0);" class="search-tags"><i class="fe fe-search me-2"></i>People<span></span></a>
-                  <a href="javascript:void(0);" class="search-tags"><i class="fe fe-search me-2"></i>Pages<span></span></a>
-                  <a href="javascript:void(0);" class="search-tags"><i class="fe fe-search me-2"></i>Articles<span></span></a>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <span class="input-group">
+                  <input type="search" class="form-control px-2 " placeholder="Search..." aria-label="Username">
+                  <a href="javascript:void(0);" class="input-group-text bg-primary text-white" id="Search-Grid"><i class="fe fe-search header-link-icon tx-fixed-white fs-18"></i></a>
+                </span>
+                <div class="mt-3">
+                  <div class="">
+                    <p class="fw-semibold text-muted mb-2 fs-13">Recent Searches</p>
+                    <div class="ps-2">
+                      <a href="javascript:void(0);" class="search-tags"><i class="fe fe-search me-2"></i>People<span></span></a>
+                      <a href="javascript:void(0);" class="search-tags"><i class="fe fe-search me-2"></i>Pages<span></span></a>
+                      <a href="javascript:void(0);" class="search-tags"><i class="fe fe-search me-2"></i>Articles<span></span></a>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <p class="fw-semibold text-muted mb-2 fs-13">Apps and pages</p>
+                    <ul class="ps-2">
+                      <li class="p-1 d-flex align-items-center text-muted mb-2 search-app">
+                        <a href="calendar2.html"><span><i class="bi bi-calendar me-2 fs-14 bg-primary-transparent avatar rounded-circle"></i>Calendar</span></a>
+                      </li>
+                      <li class="p-1 d-flex align-items-center text-muted mb-2 search-app">
+                        <a href="email-inbox.html"><span><i class="bi bi-envelope me-2 fs-14 bg-primary-transparent avatar rounded-circle"></i>Mail</span></a>
+                      </li>
+                      <li class="p-1 d-flex align-items-center text-muted mb-2 search-app">
+                        <a href="buttons.html"><span><i class="bi bi-dice-1 me-2 fs-14 bg-primary-transparent avatar rounded-circle"></i>Buttons</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mt-3">
+                    <p class="fw-semibold text-muted mb-2 fs-13">Links</p>
+                    <ul class="ps-2">
+                      <li class="p-1 align-items-center  mb-1 search-app">
+                        <a href="javascript:void(0);" class="text-primary"><u>http://spruko/html/spruko.com</u></a>
+                      </li>
+                      <li class="p-1 align-items-center mb-1 search-app">
+                        <a href="javascript:void(0);" class="text-primary"><u>http://spruko/demo/spruko.com</u></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="mt-3">
-                <p class="fw-semibold text-muted mb-2 fs-13">Apps and pages</p>
-                <ul class="ps-2">
-                  <li class="p-1 d-flex align-items-center text-muted mb-2 search-app">
-                    <a href="calendar2.html"><span><i class="bi bi-calendar me-2 fs-14 bg-primary-transparent avatar rounded-circle"></i>Calendar</span></a>
-                  </li>
-                  <li class="p-1 d-flex align-items-center text-muted mb-2 search-app">
-                    <a href="email-inbox.html"><span><i class="bi bi-envelope me-2 fs-14 bg-primary-transparent avatar rounded-circle"></i>Mail</span></a>
-                  </li>
-                  <li class="p-1 d-flex align-items-center text-muted mb-2 search-app">
-                    <a href="buttons.html"><span><i class="bi bi-dice-1 me-2 fs-14 bg-primary-transparent avatar rounded-circle"></i>Buttons</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mt-3">
-                <p class="fw-semibold text-muted mb-2 fs-13">Links</p>
-                <ul class="ps-2">
-                  <li class="p-1 align-items-center  mb-1 search-app">
-                    <a href="javascript:void(0);" class="text-primary"><u>http://spruko/html/spruko.com</u></a>
-                  </li>
-                  <li class="p-1 align-items-center mb-1 search-app">
-                    <a href="javascript:void(0);" class="text-primary"><u>http://spruko/demo/spruko.com</u></a>
-                  </li>
-                </ul>
+              <div class="modal-footer d-block">
+                <div class="text-center">
+                  <a href="javascript:void(0);" class="text-primary text-decoration-underline fs-15">View all
+                    results</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="modal-footer d-block">
-            <div class="text-center">
-              <a href="javascript:void(0);" class="text-primary text-decoration-underline fs-15">View all
-                results</a>
-            </div>
-          </div>
-        </div>
-        </div>
 
-        
-    </div>
+
+        </div>
         <!-- End Country-selector modal -->
 
         <!-- </div> -->
         <!-- END PAGE-->
-
-
 
 </body>
 

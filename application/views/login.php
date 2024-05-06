@@ -8,34 +8,34 @@
 
 <head>
 
-	<!-- META DATA -->
-	<meta charset="UTF-8">
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="vexel – Laravel Bootstrap 5  Admin & Dashboard Template">
-	<meta name="author" content="Spruko Technologies Private Limited">
-	<meta name="keywords" content="admin panel template, admin dashboard template, admin panel, bootstrap admin template, dashboard, laravel, bootstrap dashboard, admin dashboard, admin panel laravel template, laravel framework, admin laravel, laravel admin panel.">
+    <!-- META DATA -->
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="vexel – Laravel Bootstrap 5  Admin & Dashboard Template">
+    <meta name="author" content="Spruko Technologies Private Limited">
+    <meta name="keywords" content="admin panel template, admin dashboard template, admin panel, bootstrap admin template, dashboard, laravel, bootstrap dashboard, admin dashboard, admin panel laravel template, laravel framework, admin laravel, laravel admin panel.">
 
-	<!-- TITLE -->
-	<title><?= $title ?> </title>
+    <!-- TITLE -->
+    <title><?= $title ?> </title>
 
-	<!-- Authentication JS -->
-	<link rel="modulepreload" href="<?= base_url() ?>assets/authentication-main-d17b6bac.js" />
-	<script type="module" src="<?= base_url() ?>assets/authentication-main-d17b6bac.js"></script>
-	<!-- Favicon -->
-	<link rel="icon" href="<?= base_url() ?>assets/images/brand/favicon.ico" type="image/x-icon">
+    <!-- Authentication JS -->
+    <link rel="modulepreload" href="<?= base_url() ?>assets/authentication-main-d17b6bac.js" />
+    <script type="module" src="<?= base_url() ?>assets/authentication-main-d17b6bac.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="<?= base_url() ?>assets/images/brand/favicon.ico" type="image/x-icon">
 
-	<!-- ICONS CSS -->
-	<link href="<?= base_url() ?>assets/iconfonts/icons.css" rel="stylesheet">
+    <!-- ICONS CSS -->
+    <link href="<?= base_url() ?>assets/iconfonts/icons.css" rel="stylesheet">
 
-	<!-- BOOTSTRAP CSS -->
-	<link id="style" href="<?= base_url() ?>assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP CSS -->
+    <link id="style" href="<?= base_url() ?>assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- APP CSS & APP SCSS -->
-	<link rel="preload" as="style" href="<?= base_url() ?>assets/app-e29e56ca.css" />
-	<link rel="modulepreload" href="<?= base_url() ?>assets/app-4ed993c7.js" />
-	<link rel="stylesheet" href="<?= base_url() ?>assets/app-e29e56ca.css" />
-	<script type="module" src="<?= base_url() ?>assets/app-4ed993c7.js"></script>
+    <!-- APP CSS & APP SCSS -->
+    <link rel="preload" as="style" href="<?= base_url() ?>assets/app-e29e56ca.css" />
+    <link rel="modulepreload" href="<?= base_url() ?>assets/app-4ed993c7.js" />
+    <link rel="stylesheet" href="<?= base_url() ?>assets/app-e29e56ca.css" />
+    <script type="module" src="<?= base_url() ?>assets/app-4ed993c7.js"></script>
 
 
 
@@ -45,8 +45,8 @@
 
 <body class="app sidebar-mini ltr login-img">
 
-	<!-- START SWITCHER -->
-	<!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
+    <!-- START SWITCHER -->
+    <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header border-bottom">
                 <h5 class="offcanvas-title text-default" id="offcanvasRightLabel">Switcher</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -505,160 +505,156 @@
                 </div>
             </div>
         </div>         -->
-	<!-- END SWITCHER -->
+    <!-- END SWITCHER -->
 
-	<!-- BACKGROUND-IMAGE -->
-	<div class="">
+    <!-- BACKGROUND-IMAGE -->
+    <div class="">
 
-		<!-- PAGE -->
-		<div class="page">
-		<?php if ($this->session->flashdata('error')) { ?>
-			  <div class="container-fluid">
-					<div class="row justify-content-end">
-						<div class="col-3">
-						<div class="toast align-items-center tx-fixed-white bg-secondary border-0 show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-					<div class="d-flex">
-						<div class="toast-body">
-							<?php echo $this->session->flashdata('error'); ?>
-						</div>
-						<button aria-label="Close" class="btn-close fs-20 ms-auto mt-2 pe-2 tx-fixed-white" data-bs-dismiss="toast"><span aria-hidden="true">×</span></button>
-					</div>
-			  	</div>
-						</div>
-					</div>
-					</div>
-				
-    <?php } ?>
+        <!-- PAGE -->
+        <div class="page">
 
-   
-			<!-- CONTAINER OPEN -->
-			<div class="">	
-				<div class="text-center">
-					<a href="index.html"><img src="<?= base_url() ?>assets/images/brand/desktop-dark.png" class="header-brand-img" alt=""></a>
-				</div>
-			</div>
-			
-	
-
-			<div class="container-lg">
-				<div class="row justify-content-center mt-4 mx-0">
-					<div class="col-xl-4 col-lg-6">
-						<div class="card shadow-none">
-							<div class="card-body p-sm-6">
-
-							
-								<div class="text-center mb-4">
-									<h4 class="mb-1">Sign In</h4>
-									<p>Sign in to your account to continue.</p>
-								</div>
-								<form method="post" action="<?= base_url() ?>admin/Login/user_login" id="login-form">
-									<div class="row">
-
-										<div class="col-sm-12">
-											<div class="mb-3">
-												<label class="mb-2 fw-500">Email<span class="text-danger ms-1">*</span></label>
-												<div>
-													<input class="form-control ms-0" type="email" name="email" placeholder="Enter your Email">
-												</div>
-												<span style="color:red;"><?php echo form_error('email'); ?></span>
-											</div>
-										</div>
-										<div class="col-sm-12">
-											<div class="mb-3">
-												<label class="mb-2 fw-500">Password<span class="text-danger ms-1">*</span></label>
-												<div>
-													<input type="password" class="form-control" name="password" id="input-password" placeholder="Password">
-												</div>
-												<span style="color:red;"><?php echo form_error('password'); ?></span>
-											</div>
-										</div>
-										<div class="col-xl-12">
-											<div class="d-flex mb-3">
-												<div class="form-check d-flex align-items-center">
-													<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-													<label class="form-check-label tx-15" for="flexCheckDefault">
-														Remember me
-													</label>
-												</div>
-												<div class="ms-auto">
-													<a href="forgot-password.html" class="tx-primary ms-1 tx-13">Forgot Password?</a>
-												</div>
-											</div>
-											<div class="d-grid mb-3">
-												<button type="submit" class="btn btn-primary"> Login</button>
-											</div>
-
-										</div>
-
-									</div>
-								</form>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
+            <!-- CONTAINER OPEN -->
+            <div class="">
+                <div class="text-center">
+                    <a href="index.html"><img src="<?= base_url() ?>assets/images/brand/desktop-dark.png" class="header-brand-img" alt=""></a>
+                </div>
+            </div>
 
 
-		</div>
-		<!-- End PAGE -->
-	</div>
 
-	<!-- Bootstrap JS -->
-	<script src="<?= base_url() ?>assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="<?= base_url() ?>assets/jquery/jquery-3.6.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-
-	<!-- Custom-Switcher JS -->
-	<link rel="modulepreload" href="<?= base_url() ?>assets/custom-switcher-aff38aa1.js" />
-	<link rel="modulepreload" href="<?= base_url() ?>assets/defaultmenu-7feba3a7.js" />
-	<script type="module" src="<?= base_url() ?>assets/custom-switcher-aff38aa1.js"></script>
-	<link rel="modulepreload" href="<?= base_url() ?>assets/toast-74f45b92.js" />
-	<script type="module" src="<?= base_url() ?>assets/toast-74f45b92.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-	
-
-	<style>
-		.error {
-			color: red;
-		}
-	</style>
-	<script>
-		$(document).ready(function($) {
-			$("#login-form").validate({
-				rules: {
-					email: {
-						required: true,
-					},
-					password: "required",
-				},
-				messages: {
-					email: {
-						required: "Please enter email",
-					},
-
-					password: "Please enter password",
-				},
-				errorPlacement: function(error, element) {
-					if (element.is(":radio")) {
-						error.appendTo(element.parents('.form-group'));
-					} else { // This is the default behavior 
-						error.insertAfter(element);
-					}
-				},
-				submitHandler: function(form) {
-					form.submit();
-				}
-
-			});
-		});
-		$('input').keypress(function(e) {
-			if (this.value.length === 0 && e.which === 32) e.preventDefault();
-		});
-		
-	</script>
+            <div class="container-lg">
+                <div class="row justify-content-center mt-4 mx-0">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="card shadow-none">
+                            <div class="card-body p-sm-6">
 
 
+                                <div class="text-center mb-4">
+                                    <h4 class="mb-1">Sign In</h4>
+                                    <p>Sign in to your account to continue.</p>
+                                </div>
+                                <form method="post" action="<?= base_url() ?>admin/Login/user_login" id="login-form">
+                                    <div class="row">
+
+                                        <div class="col-sm-12">
+                                            <div class="mb-3">
+                                                <label class="mb-2 fw-500">Email<span class="text-danger ms-1">*</span></label>
+                                                <div>
+                                                    <input class="form-control ms-0" type="email" name="email" placeholder="Enter your Email">
+                                                </div>
+                                                <span style="color:red;"><?php echo form_error('email'); ?></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="mb-3">
+                                                <label class="mb-2 fw-500">Password<span class="text-danger ms-1">*</span></label>
+                                                <div>
+                                                    <input type="password" class="form-control" name="password" id="input-password" placeholder="Password">
+                                                </div>
+                                                <span style="color:red;"><?php echo form_error('password'); ?></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="d-flex mb-3">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label tx-15" for="flexCheckDefault">
+                                                        Remember me
+                                                    </label>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <a href="forgot-password.html" class="tx-primary ms-1 tx-13">Forgot Password?</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid mb-3">
+                                                <button type="submit" class="btn btn-primary"> Login</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- End PAGE -->
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="<?= base_url() ?>assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url() ?>assets/jquery/jquery-3.6.1.min.js"></script>
+
+    <!-- Custom-Switcher JS -->
+    <link rel="modulepreload" href="<?= base_url() ?>assets/custom-switcher-aff38aa1.js" />
+    <link rel="modulepreload" href="<?= base_url() ?>assets/defaultmenu-7feba3a7.js" />
+    <script type="module" src="<?= base_url() ?>assets/custom-switcher-aff38aa1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function($) {
+            $("#login-form").validate({
+                rules: {
+                    email: {
+                        required: true,
+                    },
+                    password: "required",
+                },
+                messages: {
+                    email: {
+                        required: "Please enter email",
+                    },
+
+                    password: "Please enter password",
+                },
+                errorPlacement: function(error, element) {
+                    if (element.is(":radio")) {
+                        error.appendTo(element.parents('.form-group'));
+                    } else { // This is the default behavior 
+                        error.insertAfter(element);
+                    }
+                },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+
+            });
+        });
+        $('input').keypress(function(e) {
+            if (this.value.length === 0 && e.which === 32) e.preventDefault();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <?php if ($this->session->flashdata('success')) : ?>
+        <script>
+            toastr.success('<?php echo $this->session->flashdata("success"); ?>', '', <?php echo json_encode([
+                                                                                            "closeButton" => true,
+                                                                                            "progressBar" => true,
+                                                                                            "timeOut" => "2000",
+                                                                                        ]); ?>);
+        </script>
+    <?php endif; ?>
+    <?php if ($this->session->flashdata('error')) : ?>
+        <script>
+            toastr.error('<?php echo $this->session->flashdata("error"); ?>', '', <?php echo json_encode([
+                                                                                        "closeButton" => true,
+                                                                                        "progressBar" => true,
+                                                                                        "timeOut" => "2000",
+                                                                                    ]); ?>);
+        </script>
+    <?php endif; ?>
 
 </html>
